@@ -1,0 +1,46 @@
+li {
+  white-space: pre;
+}
+
+li > span {
+  font-weight: bold;
+}
+
+#app {
+  width: 100%;
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 2rem 1rem;
+}
+
+.lists {
+  display: flex;
+}
+
+.lists div > h2 {
+  text-align: center;
+}
+
+.lists div {
+  flex: 1 0 50%;
+  padding: 0 0.5rem;
+}
+
+.lists div:first-of-type {
+  border-right: 1px solid #eee;
+}
+
+.transport-list,
+.cost-list {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+  grid-template-rows: auto;
+}

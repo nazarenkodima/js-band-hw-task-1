@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS-BAND-HW-TASK-1</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div class="forms">
+        <div class="truck-form">
+          <h1 class="title is-4">Truck form</h1>
+          <div class="field">
+            <label for="ID">ID</label>
+            <input
+              type="text"
+              name="ID"
+              class="truck-id truck-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="model">Model</label>
+            <input
+              type="text"
+              name="model"
+              class="truck-model truck-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="producedYear">Produced year</label>
+            <input
+              type="text"
+              name="producedYear"
+              class="truck-producedYear truck-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="capacity">Capacity</label>
+            <input
+              type="text"
+              name="capacity"
+              class="truck-capacity truck-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="averageSpeed">Average Speed</label>
+            <input
+              type="text"
+              name="averageSpeed"
+              class="truck-averageSpeed truck-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="licensePlate">License Plate</label>
+            <input
+              type="text"
+              name="licensePlate"
+              class="truck-licensePlate truck-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="typeOfGas">Type Of Gas</label>
+            <input
+              type="text"
+              name="typeOfGas"
+              class="truck-typeOfGas truck-input input is-small"
+            />
+          </div>
+          <button
+            type="button"
+            id="add-truck"
+            class="button is-rounded is-small"
+          >
+            Add truck
+          </button>
+        </div>
+        <div class="ship-form">
+          <h1 class="title is-4">Ship form</h1>
+          <div class="field">
+            <label for="ID">ID</label>
+            <input
+              type="text"
+              name="ID"
+              class="ship-id ship-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="model">Model</label>
+            <input
+              type="text"
+              name="model"
+              class="ship-model ship-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="type">Name</label>
+            <input
+              type="text"
+              name="name"
+              class="ship-name ship-input input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="producedYear">Produced year</label>
+            <input
+              type="text"
+              name="producedYear"
+              class="ship-producedYear ship-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="capacity">Capacity</label>
+            <input
+              type="text"
+              name="capacity"
+              class="ship-capacity ship-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="averageSpeed">Average Speed</label>
+            <input
+              type="text"
+              name="averageSpeed"
+              class="ship-averageSpeed ship-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="countOfTeam">Count of team</label>
+            <input
+              type="text"
+              name="countOfTeam"
+              class="ship-countOfTeam ship-input input is-small"
+            />
+          </div>
+          <button
+            type="button"
+            id="add-ship"
+            class="button is-rounded is-small"
+          >
+            Add ship
+          </button>
+        </div>
+        <div class="cost-form">
+          <h1 class="title is-4">Cost form</h1>
+          <div class="field">
+            <label for="model">Model</label>
+            <input
+              type="text"
+              name="model"
+              class="model cost-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="costByKilogram">Cost by kilogram</label>
+            <input
+              type="text"
+              name="costByKilogram"
+              class="costByKilogram cost-input input is-small"
+            />
+          </div>
+          <div class="field">
+            <label for="costByDistance">Cost by distance</label>
+            <input
+              type="text"
+              name="costByDistance"
+              class="costByDistance cost-input input is-small"
+            />
+          </div>
+
+          <button
+            type="button"
+            id="add-cost"
+            class="button is-rounded is-small"
+          >
+            Add Cost
+          </button>
+        </div>
+      </div>
+
+      <div class="lists">
+        <div>
+          <h2 class="title is-5">Transport List</h2>
+          <ul class="transport-list"></ul>
+        </div>
+
+        <div>
+          <h2 class="title is-5">Cost List</h2>
+          <ul class="cost-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./assets/index.js"></script>
+  </body>
+</html>
